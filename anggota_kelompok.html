@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Data Mhs</title>
+    <style>
+        body {
+            overflow: hidden; /* Menyembunyikan overflow agar video mengisi seluruh layar */
+            margin: 0; /* Menghilangkan margin untuk memastikan video menutupi seluruh area */
+        }
+
+        video#mp4 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Menyesuaikan ukuran video agar selalu terlihat secara proporsional */
+            z-index: -1;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto; /* Mengatur agar tabel berada di tengah */
+            background-color: rgba(255, 255, 255, 0.25); /* Membuat tabel transparan */
+            border-radius: 10px; /* Menambahkan sudut bulat pada tabel */
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<video autoplay loop id="mp4">
+    <source src="mp4/lukisa3.mp4" type="video/mp4"> <!-- Buat ganti background video -->
+</video>
+
+<h1>PROJECT WEB PROGRAMMING</h1>
+<table>
+    <tr><th>Nama</th><th>NIM</th><th>Kelas</th></tr>
+    <tr><td>Ahmad Aji Saputra</td><td>19230997</td><td>19.2b.05</td></tr>
+    <tr><td>Imam Dzaki Ramadhan</td><td>19231005</td><td>19.2b.05</td></tr>
+    <tr><td>Marshall Paulus Amran Sihombing</td><td>19230908</td><td>19.2b.05</td></tr>
+    <tr><td>Primatama Ziddane</td><td>19231076</td><td>19.2b.05</td></tr>
+</table>
+
+<a href="index.html" style="display: block; text-align: center; margin-top: 20px;">Lanjut ke Home</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>

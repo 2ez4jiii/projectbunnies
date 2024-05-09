@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sosial-media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Bunnies Club</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="biodata.html">Biodata Member</a>
+        <a href="daftar_lagu.html">Daftar Lagu</a>
+        <a href="sosial_media.html">Sosial Media</a>
+        <a href="lukisa.html">LUKISA NIUMI :O</a>
+        <a href="anggota_kelompok.html">Anggota Kelompok</a>
+    </nav>
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/newjeans_bubble.jpg" alt="Image 1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/nj_omg.jpg" alt="Image 2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/nj_basket.jpg" alt="Image 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/nj_1.jpg" alt="Image 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/nj_2.jpg" alt="Image 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/nj_4.jpg" alt="Image 2">
+            </div>
+        </div>
+        <div class="member-info">
+        <h2>NewJeans Member</h2>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/danielle.png" alt="Image 1">
+                <div class="text-overlay">
+                    <p>Danielle</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/hanni.png" alt="Image 2">
+                <div class="text-overlay">
+                    <p>Hanni</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/haerin.png" alt="Image 3">
+                <div class="text-overlay">
+                    <p>Haerin</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/hyein.png" alt="Image 4">
+                <div class="text-overlay">
+                    <p>Hyein</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/minji.png" alt="Image 5">
+                <div class="text-overlay">
+                    <p>Minji</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="member-info">
+            <h2>Ikuti Kami di Sosial Media:</h2>
+            <ul>
+                <li><a href="https://newjeans.kr" target="_blank">Situs Resmi</a></li>
+                <li><a href="https://newjeans.jp" target="_blank">Situs Web Resmi Jepang</a></li>
+                <li><a href="https://www.instagram.com/newjeans_official/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/user/NewJeans" target="_blank">YouTube</a></li>
+                <li><a href="https://twitter.com/NewJeans_ADOR" target="_blank">Twitter</a></li>
+                <li><a href="https://twitter.com/NewJeans_jp" target="_blank">Twitter (JP)</a></li>
+                <li><a href="https://www.tiktok.com/@newjeans_official" target="_blank">TikTok</a></li>
+            </ul>
+        </div>
+    </div>
+        <div class="member-info">
+            <h2>Fandom</h2>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item center"> <!-- Tambahkan kelas 'center' di sini -->
+                    <img src="images/Bunnies_gif.gif">
+                        <p>Bunny (Tokki/토끼) adalah nama fandom resmi yang dibuat oleh NewJeans</p>
+                    </div>
+                </div>
+            </div>            
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 2000); // Ubah angka 2000 dengan interval waktu antar gambar (dalam milidetik)
+        }
+    </script>
+</body>
+</html>
